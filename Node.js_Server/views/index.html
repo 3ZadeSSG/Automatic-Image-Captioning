@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automatic Image Captioning</title>
+    <meta name="description" content="Facial Keypoint Detection using Pytorch and OpenCV." />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/materialize.min.css">
+    <link rel="stylesheet" src="../public/css/index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12" style="text-align: center;">
+            <br><br>
+            <img src="../public/images/logos/Pytorch_logo.png" height="70px"/>
+        </div>
+        <div class="col s12 m12 l12" style="text-align: center;">
+          <br><br>
+          <h4>Automatic Image Captioning</h4>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <form id="upload-photos" method="post" action="/upload_photos" enctype="multipart/form-data">
+        <div class="form-group">
+          <div class="row">
+            <div class="col s12 m6 l6">
+              <div class = "file-field input-field">
+                <div class = "btn btn-default">
+                    <span>Browse</span>
+                    <input type = "file" name="photos[]" multiple="multiple" id="photos-input" accept="image/*"/>
+                </div>
+                <div class = "file-path-wrapper">
+                    <input class = "file-path validate" type = "text"
+                      placeholder = "Upload image to get started" />
+                </div>
+              </div>
+              <input type="hidden" name="csrf_token" value="just_a_text_field" />
+              <input class="btn btn-default" type="submit" name="Photo Uploads" value="Upload Photo"/>
+            </div>
+            <div class="col s12 m6 l6" style="text-align: center;">
+              <div class="progress" style="visibility: hidden;" id="progress_upload">
+                <div id = "upload_progress_bar" class="determinate" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                    <span class="sr-only"></span>
+                </div>
+              </div>
+              <div id="album" class="row"></div>
+              <a class="waves-effect waves-light btn" id = "button_captions" style="visibility: hidden;"><i class="material-icons right">navigate_next</i>Generate Caption</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="progress" id="progress_captions" style="visibility: hidden;">
+      <div class="indeterminate"></div>
+    </div>
+    <div class="row" id = "output_caption" style="text-align: center;">
+      <!---- Output Text Will be displayed here ----->
+      <!---------- This is just a template what jQuery will add when sever sends back response --------
+      <div style="max-width: 400px;display: block;margin: auto;">
+        <h5 class="header">Predicted Caption</h5>
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <p id="text_predicted_caption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      ------------------------------------------------------------------------------------------------->
+    </div>
+    <div class="row" id = "hint_bottom" style="visibility: hidden;">
+      <div class="col s12 m12 l12" style="text-align: center;">
+        <br><br>
+        <h6>To try on another image BROWSE & UPLOAD again</h6>
+      </div>
+    </div>
+  </div>
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../public/js/index.js"></script>
+</body>
+</html>

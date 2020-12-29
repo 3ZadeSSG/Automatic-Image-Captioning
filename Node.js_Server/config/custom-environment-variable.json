@@ -1,0 +1,3 @@
+{
+    "jwtPrivateKey": "this will have a key in case any JWT related function is required"
+  }

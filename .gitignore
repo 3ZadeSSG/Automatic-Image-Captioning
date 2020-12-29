@@ -1,0 +1,10 @@
+Data/
+.ipynb_checkpoints/
+__pycache__/
+images/
+Node.js_Server/node_modules/
+Node.js_Server/python_models/__pycache__/
+
+
+
+

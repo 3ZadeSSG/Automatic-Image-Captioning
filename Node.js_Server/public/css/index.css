@@ -1,0 +1,8 @@
+.progress{
+  margin-top:50%;
+  background-color:gray;
+}
+.progress .determinate {
+  background-color: orange;
+}
+
