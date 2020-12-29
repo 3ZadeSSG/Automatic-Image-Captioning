@@ -1,6 +1,6 @@
 <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/><img src="https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?&style=for-the-badge&logo=PyTorch&logoColor=white" /><img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/3ZadeSSG/Automatic-Image-Captioning/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/3ZadeSSG/Automatic-Image-Captioning/blob/main/LICENSE)
 
 # Automatic Image Captioning
 
@@ -15,10 +15,13 @@ This project focuses on Computer Vision methods to generate Image Captions.
 * Application takes images and shows proper caption for it.
 
 ### Example
-##### Output example with Web Application which uses trained model
-<img src="https://github.com/3ZadeSSG/Automatic-Image-Captioning/blob/master/images/Screenshot2.PNG">
+##### Output example with Web Application which uses a model which was trained for only 2 epochs
 
-<img src="https://github.com/3ZadeSSG/Automatic-Image-Captioning/blob/master/images/Screenshot1.PNG">
+"a laptop computer sitting on top of a desk" | "a plate of food with a fork and fork"
+--- | ---
+<img src="https://github.com/3ZadeSSG/Automatic-Image-Captioning/blob/main/images/Screenshot2.PNG"> | <img src="https://github.com/3ZadeSSG/Automatic-Image-Captioning/blob/main/images/Screenshot1.PNG">
+
+
 
 ## 2. About "Original Training Notebooks"
 
