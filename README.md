@@ -48,12 +48,16 @@ pip install -r requirements.txt
 ### Data & Checkpoints
 
 1. Training, Testing and Validation datasets are over 24 GB, hence are needed to be downloaded from source. (https://cocodataset.org/#download)
-a. Training Dataset: http://images.cocodataset.org/zips/train2014.zip
-b. Testing Dataset: http://images.cocodataset.org/zips/test2014.zip
-c. Validation Dataset: http://images.cocodataset.org/zips/val2014.zip
-d. Annotations:
-                http://images.cocodataset.org/annotations/image_info_test2014.zip
-                http://images.cocodataset.org/annotations/annotations_trainval2014.zip
+
+        a. Training Dataset: http://images.cocodataset.org/zips/train2014.zip
+
+        b. Testing Dataset: http://images.cocodataset.org/zips/test2014.zip
+
+        c. Validation Dataset: http://images.cocodataset.org/zips/val2014.zip
+
+        d. Annotations:
+                        http://images.cocodataset.org/annotations/image_info_test2014.zip
+                        http://images.cocodataset.org/annotations/annotations_trainval2014.zip
 
 2. Trained Model's checkpoint (only upto 2 epochs) is located in `model_checkpoints` as well as `Node.js_Server/python_models/saved_models`
 
