@@ -62,16 +62,18 @@ d. Annotations:
 ### Training Hardware
 With batch size = 32 and model as per in training notebooks:-
 1. It takes 2.30 Hrs (Approx) to run a single epoch on following hardware resources available on Google Colab
-        ```
-            Intel(R) Xeon(R) CPU @ 2.20GHz [Core(s) per socket:  1 | Thread(s) per core:  2 ]
-            Tesla T4 [CUDA Version: 10.1]
-        ```
+
+        
+        Intel(R) Xeon(R) CPU @ 2.20GHz [Core(s) per socket:  1 | Thread(s) per core:  2 ]
+        Tesla T4 [CUDA Version: 10.1]
+        
 
 It takes 8 Hrs (Approx. as per back calculation basd on time taken for 100 steps) to run single epoch on following local hardware:-
-        ```
+
+        
         Intel(R) Core(TM) i3-2120 CPU @ 3.20GHz [Core(s) :  2 | Thread(s) per core:  2 ]
         GTX 1060 [CUDA Version: 10.1]
-        ```
+        
 
 ## 3. Running Node.js Application
 
@@ -80,11 +82,13 @@ It takes 8 Hrs (Approx. as per back calculation basd on time taken for 100 steps
   1. Navigate to `Node.js_Server`
   2. Place the trained pytorch model's checkpoint file `checkpoint.pth` to `python_models/saved_models` folder (in case new model was trained).
   4. In case new vocab.pkl file was genereated, or new model's checkpoint filename is different, change following variables in `Node.js_Server/python_models/model.py` to appropriate names as per requirement.
+  
         ```
         ENCODER_CNN_CHECKPOINT = "python_models/saved_models/encoderEpoch_2.pth"
         DECODER_LSTM_RNN_CHECKPOINT = "python_models/saved_models/decoderEpoch_2.pth"
         VOCAB_FILE = "python_models/saved_models/vocab.pkl"
         ```
+        
   5. Run following commands
      ```
      npm install                      (This installs Node.js dependencies)
