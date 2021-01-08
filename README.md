@@ -107,15 +107,3 @@ It takes 8 Hrs (Approx. as per back calculation basd on time taken for 100 steps
      ```
      node app.js 192.168.32.134:8000
      ```
-
- LICENSE: This project is licensed under the terms of the MIT license.
-
-
- #### Source Repo:
- The project's root repo is: https://github.com/udacity/CVND---Image-Captioning-Project
- Due to limits of not being able to make a forked repo private, it has to follow these stpes: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/duplicating-a-repository
-
-
-
-
-
